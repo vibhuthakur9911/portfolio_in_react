@@ -40,7 +40,7 @@ To get a local copy up and running, follow these steps:
     
    ### 📧 Contact
 
-   Feel free to reach out to me via email at [vaibhavthakur9911@gmail.com](vaibhavthakur9911@gmail.com) or connect with me on LinkedIn.
+   Feel free to reach out to me via email at <a href="mailto:vaibhavthakur9911@gmail.com">vaibhavthakur9911@gmail.com</a> or connect with me on LinkedIn.
 
    ### 📜 Acknowledgements
 
