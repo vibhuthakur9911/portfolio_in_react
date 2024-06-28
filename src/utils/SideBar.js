@@ -1,7 +1,7 @@
 import React from "react";
 import { IconUserCircle } from "@tabler/icons-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 import propTypes from "prop-types"
 import {
   faUserSecret,
@@ -18,22 +18,22 @@ const menu = [
 },
 {
   title:'About us',
-  icon:  <IconUserCircle stroke={2} />,
+  icon:   <FontAwesomeIcon icon={faUserSecret} />,
   url: '/about'
 },
 {
   title:'Resume',
-  icon:  <IconUserCircle stroke={2} />,
+  icon:   <FontAwesomeIcon icon={faIdCard} />,
   url: '/resume'
 },
 // {
 //   title:'Portfolio',
-//   icon:  <IconUserCircle stroke={2} />,
+//   icon:   <FontAwesomeIcon icon={faIdCard} />,
 //   url: '/'
 // },
 {
   title:'Contact us',
-  icon:  <IconUserCircle stroke={2} />,
+  icon:   <FontAwesomeIcon icon={faAddressBook} />,
   url: '/contact'
 },
 
@@ -43,12 +43,12 @@ function Menu(props){
   return (
     <>
       <li>
-      <Link to={props.url}>
+      <NavLink to={props.url} activeClassName="active">
       <span className="sideIcon">
       {props.icon}
       </span>
       {props.title}
-      </Link>
+      </NavLink>
       </li>
     </>
   )
