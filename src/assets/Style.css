@@ -9,7 +9,7 @@ a {
   text-decoration: none;
 }
 body {
-  background: #0f0f0f;
+  background: #02050a;
 }
 .sideBar {
   position: fixed;
@@ -105,4 +105,9 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1.2;
+}
+/* ========About setion========== */
+.about_sec {
+  width: 100%;
+  padding: 0 15px;
 }
