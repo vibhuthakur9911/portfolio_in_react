@@ -45,10 +45,15 @@ To get a local copy up and running, follow these steps:
    ### 📜 Acknowledgements
 
    [React.js](https://react.dev/)
+
    [React Router](https://reactrouter.com/en/main)
+
    [EmailJS](https://www.emailjs.com/)
+
    [Bootstrap](https://getbootstrap.com/)
+
    [FontAwesome](https://fontawesome.com/)
+   
    [React Animated Cursor](https://github.com/stephenscaff/react-animated-cursor)
 
    Thank you for visiting my portfolio! Your feedback and support are greatly appreciated.
