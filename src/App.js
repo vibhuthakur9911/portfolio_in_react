@@ -43,10 +43,10 @@ function App() {
       outerScale={1.5}
       hasBlendMode={true}
       innerStyle={{
-        backgroundColor: '#55e6a5'
+        backgroundColor: 'var(--theme-color)'
       }}
       outerStyle={{
-        border: '3px solid #55e6a5'
+        border: '3px solid var(--theme-color)'
       }}
       clickables={[
         'a',

@@ -1,3 +1,7 @@
+:root {
+  --theme-color: #55e6a5;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +24,7 @@ body {
 }
 
 .logo {
-  color: #55e6a5;
+  color: var(--theme-color);
   text-align: center;
   font-size: 32px;
   padding: 17px 0;
@@ -64,12 +68,12 @@ body {
 
 .sideMenu ul li a:hover,
 .sideMenu ul li a.active {
-  color: #55e6a5;
+  color: var(--theme-color);
 }
 
 .sideMenu ul li a:hover span,
 .sideMenu ul li a.active span {
-  background: #55e6a5;
+  background: var(--theme-color);
   color: #000;
 }
 
