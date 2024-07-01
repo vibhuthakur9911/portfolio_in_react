@@ -1,26 +1,58 @@
 :root {
   --theme-color: #55e6a5;
+  --text-color: #fefefe;
+  --dark-theme-sidebaar: #09101a;
+  --bg-dark: #02050a;
 }
 
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--bg-dark);
+  font-family: "Poppins", sans-serif;
 }
 /* font-family: "Poppins", sans-serif
 font-family: "Open Sans", sans-serif;
 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: var(--theme-color);
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
+  transition: all 0.3s;
 }
-body {
-  background: #02050a;
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+img {
+  max-width: 100%;
+}
+.default-btn {
 }
 .sideBar {
   position: fixed;
   width: 280px;
   left: 0;
   height: 100vh;
-  background: #09101a;
+  background: var(--dark-theme-sidebaar);
 }
 
 .logo {
@@ -79,9 +111,8 @@ body {
 
 .main_content {
   height: 100vh;
-  width: calc(100vw - 280px);
-  /* background: #000; */
-  margin-left: auto;
+  max-width: calc(100vw - 280px);
+  margin-left: 280px;
 }
 .home_banner {
   height: 100vh;
@@ -94,7 +125,7 @@ body {
   display: flex;
   height: 100%;
   align-items: center;
-  color: #fff;
+  /* color: #fff; */
   padding: 0 66px;
   width: 61%;
 }
@@ -105,6 +136,7 @@ body {
 
 .banner-content h2 {
   font-family: "Poppins", sans-serif;
+  color: #fff;
   font-size: 50px;
   font-weight: 600;
   text-transform: uppercase;
@@ -113,5 +145,51 @@ body {
 /* ========About setion========== */
 .about_sec {
   width: 100%;
-  padding: 0 15px;
+  padding: 70px 30px;
+}
+.stroke_text {
+  font-size: 65px;
+  font-weight: 600;
+  -webkit-text-stroke: 1.5px var(--theme-color);
+  color: var(--bg-dark);
+  text-shadow: 5px -2px 2px #55e6a5;
+  display: inline-block;
+  letter-spacing: 6px;
+  line-height: 1;
+}
+.about_content {
+  padding-right: 40px;
+}
+
+.title_text {
+  padding: 3px 0 3px 21px;
+  border-left: 5px solid;
+  margin: 21px 0 15px 0px;
+}
+.specialize_block {
+  background: #282828;
+  padding: 39px 24px;
+  text-align: center;
+  border-radius: 11px;
+  transform-style: preserve-3d;
+  margin-bottom: 15px;
+}
+
+.specialize_block img {
+  width: 60px;
+}
+
+.specialize_block h6 {
+  margin: 17px 0 7px 0;
+}
+
+.specialize_block p {
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  margin: 0;
 }

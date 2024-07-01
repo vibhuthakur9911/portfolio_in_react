@@ -33,7 +33,7 @@ const Home = () => {
       style={{  display: 'inline-block', color: 'rgb(36 210 132)'}}
       repeat={Infinity}
     /> </h2>
-              <p>I'm a passionate UI/UX designer with a mission to create delightful and intuitive digital experiences. With a strong foundation in design principles and a keen eye for detail, I specialize in translating complex ideas into user-friendly interfaces that captivate and engage.</p>
+              <p>In this dynamic field, staying ahead of the curve is crucial. I remain at the forefront of the latest web development trends, ensuring that the solutions I provide are not only current but also forward-thinking. Committed to excellence, I consistently deliver high-quality solutions that not only meet but exceed business objectives.</p>
 
               <button className="btn btn-primary">Download CV <FontAwesomeIcon icon={faDownload} /></button>
              </div>
