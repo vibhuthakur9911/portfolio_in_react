@@ -17,7 +17,7 @@ const menu = [
   url: '/'
 },
 {
-  title:'About us',
+  title:'About me',
   icon:   <FontAwesomeIcon icon={faUserSecret} />,
   url: '/about'
 },
@@ -42,7 +42,7 @@ const menu = [
 function Menu(props){
   return (
     <>
-      <li>
+      <li key={props.i}>
       <NavLink to={props.url} activeClassName="active">
       <span className="sideIcon">
       {props.icon}
@@ -64,7 +64,7 @@ export default function SideBar(props) {
             </div>
             <div className="sideMenu">
               <ul>
-              {menu.map((m)=><Menu title = {m.title} url = {m.url} icon = {m.icon}/>)}
+              {menu.map((m,i)=><Menu title = {m.title} key={i} url = {m.url} icon = {m.icon}/>)}
               </ul>
               {/* <ul>
                 <li>

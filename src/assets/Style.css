@@ -47,6 +47,10 @@ p {
 img {
   max-width: 100%;
 }
+
+.my_cursor {
+  mix-blend-mode: difference;
+}
 .default-btn {
 }
 
@@ -66,7 +70,13 @@ img {
   border-left: 4px solid;
   margin: 16px 0 15px 0px;
 }
-
+.tag_block {
+  background: var(--theme-color);
+  padding: 5px 18px;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 2px;
+}
 /* =============Side bar================= */
 .sideBar {
   position: fixed;
@@ -136,6 +146,40 @@ img {
   color: #000;
 }
 
+.socialIcon ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 17px 0;
+  border-top: 3px solid var(--theme-color);
+}
+
+.socialIcon ul i {
+  height: 36px;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4c4c4cba;
+  font-size: 16px;
+  color: var(--theme-color);
+  transition: 0.5s;
+  border-radius: 6px;
+}
+
+.sideBar_inner_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.socialIcon ul i:hover {
+  background: var(--theme-color);
+  color: #fff;
+  border-color: var(--theme-color);
+}
+
 .main_content {
   height: 100vh;
   max-width: calc(100vw - 260px);
@@ -191,6 +235,7 @@ img {
   border-radius: 11px;
   transform-style: preserve-3d;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .specialize_block img {
@@ -234,7 +279,13 @@ img {
   animation: aboutAmini linear 2s infinite alternate;
   -webkit-animation: aboutAmini linear 2s infinite alternate;
 }
-.about_img:after {
+
+.tilt-effect {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.bord:after {
   position: absolute;
   content: "";
   top: 27px;
@@ -249,6 +300,32 @@ img {
 
 .specialized_sec {
   padding: 32px 0 0 0;
+}
+
+.specialize_block:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 35%;
+  width: 39%;
+  background: var(--theme-color);
+  border-radius: 0 0 100%;
+}
+.specialize_block:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  height: 20%;
+  width: 26%;
+  background: var(--theme-color);
+  z-index: 0;
+  border-radius: 100% 0 0;
+}
+.specialize_block_inner {
+  position: relative;
+  z-index: 2;
 }
 
 @keyframes aboutAmini {
@@ -268,36 +345,21 @@ img {
     -o-transform: scale(1.1);
   }
 }
-.socialIcon ul {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  padding: 17px 0;
-  border-top: 3px solid var(--theme-color);
-}
-
-.socialIcon ul i {
-  height: 36px;
-  width: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #4c4c4cba;
-  font-size: 16px;
-  color: var(--theme-color);
-  transition: 0.5s;
-  border-radius: 6px;
-}
-
-.sideBar_inner_content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-}
-
-.socialIcon ul i:hover {
+.tag_block {
   background: var(--theme-color);
+  padding: 5px 18px;
   color: #fff;
-  border-color: var(--theme-color);
+  font-size: 15px;
+  border-radius: 2px;
+}
+
+.resume_head {
+  position: relative;
+  display: inline-block;
+}
+
+.resume_head span {
+  position: absolute;
+  bottom: -23px;
+  right: -42px;
 }
