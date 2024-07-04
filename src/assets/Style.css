@@ -363,3 +363,6 @@ img {
   bottom: -23px;
   right: -42px;
 }
+.myProgress.progress .progress-bar {
+  background-color: #007d45;
+}
