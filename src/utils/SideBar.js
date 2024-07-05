@@ -8,6 +8,7 @@ import {
   faIdCard,
   faLaptopCode,
   faAddressBook,
+  faXTwitter,
 } from "@fortawesome/free-solid-svg-icons";
 
 const menu = [
@@ -117,10 +118,13 @@ export default function SideBar(props) {
                     <li> <a href="https://github.com/vibhuthakur9911" target="_blank" aria-label="Go to github"> <i class="fab fa-github"></i></a>
                     </li>
                     <li> <a href="https://www.linkedin.com/in/vaibhav-thakur9911/" target="_blank" aria-label="Visit to Linkedin"> <i class="fab fa-linkedin"></i></a></li>
+
                     <li> <a href="https://www.instagram.com/mr.rajput12o8/" target="_blank" aria-label="Visit to instagram"> <i class="fab fa-instagram"></i></a></li>
 
-                    <li> <a href="https://twitter.com/vibhuvibes" aria-label="say hi on fa-whatsapp" target="_blank">
-                    <img src="assets/img/x-twitter.svg" alt=""/></a></li>
+                    <li> <a href="https://twitter.com/vibhuvibes" target="_blank" aria-label="Visit to instagram"> 
+                    <i class="fa-brands fa-x-twitter"></i></a></li>
+                    {/* <li> <a href="https://twitter.com/vibhuvibes" aria-label="say hi on fa-whatsapp" target="_blank">
+                    <img src="assets/img/x-twitter.svg" alt=""/></a></li> */}
 
                   {/* <li> <a href="https://wa.me/919911069091?text=Hii" aria-label="say hi on fa-whatsapp" target="_blank"> <i class="fa fa-whatsapp"></i></a></li>  */}
                 </ul>
