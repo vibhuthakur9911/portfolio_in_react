@@ -5,19 +5,21 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
+import InfoPopup from "./utils/components/Popup"
 // React Routing
 import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
-import "./assets/Style.css";
-
 import SideBar from "./utils/SideBar";
 import React from "react";
 import AnimatedCursor from "react-animated-cursor"
+import "./App.css";
+import "./assets/Style.css";
+
 
 function App() {
   return (
     <>
+      <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -29,8 +31,10 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      <div className="App">
-      <AnimatedCursor
+    
+    <InfoPopup/>
+
+    <AnimatedCursor
       innerSize={8}
       outerSize={30}
       cursorInner = {12}
@@ -41,12 +45,16 @@ function App() {
       innerAlpha={0.2}
       innerScale={1}
       outerScale={1.5}
+      
       hasBlendMode={true}
       innerStyle={{
-        backgroundColor: 'var(--theme-color)'
+        backgroundColor: 'var(--theme-color)',
+        zIndex : 999999999
+       
       }}
       outerStyle={{
-        border: '3px solid var(--theme-color)'
+        border: '3px solid var(--theme-color)',
+        zIndex : 999999999
       }}
       clickables={[
         'a',

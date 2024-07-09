@@ -6,15 +6,6 @@
   --bg-dark: #02050a;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  background: var(--bg-dark);
-  font-family: "Poppins", sans-serif;
-}
 /* font-family: "Poppins", sans-serif
 font-family: "Open Sans", sans-serif;
 */
@@ -69,6 +60,54 @@ img {
   mix-blend-mode: difference;
 }
 .default-btn {
+  border: 1px solid var(--theme-color);
+  padding: 8px 22px;
+  border-radius: 5px;
+  color: var(--theme-color);
+  position: relative;
+}
+
+.myModal .myModal_header {
+  background: #00af60;
+  color: #fff;
+  border: none;
+}
+
+.myModal .modal-content {
+  background: var(--bg-dark);
+  color: #fff;
+  border: none;
+}
+
+.myModal .modal-body {
+  padding: 30px 18px;
+}
+
+.default-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.default-btn:hover {
+  color: #fff;
+}
+
+.default-btn:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 0;
+  height: 100%;
+  background: var(--theme-color);
+  top: 0;
+  transition: 0.5s;
+  animation-delay: 0.9s;
+  z-index: 0;
+}
+
+.default-btn:hover:after {
+  left: 0;
+  width: 100%;
 }
 
 .stroke_text {

@@ -31,6 +31,45 @@ const database_skill = [
     now: 75,
   },
 ];
+const tech_skills = [
+  {
+    title: "HTML5",
+    now: 25,
+  },
+  {
+    title: "CSS",
+    now: 75,
+  },
+  
+  {
+    title: "Sass",
+    now: 75,
+  },
+  {
+    title: "Bootsrtap",
+    now: 75,
+  },
+  {
+    title: "Tailwind",
+    now: 75,
+  },
+  {
+    title: "JavaScript",
+    now: 75,
+  },
+  {
+    title: "JQuery",
+    now: 75,
+  },
+  {
+    title: "React.js",
+    now: 75,
+  },
+  {
+    title: "Php",
+    now: 75,
+  },
+];
 
 function MyProgress(props) {
   return (
@@ -139,18 +178,25 @@ const Resume = (props) => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-sm-12">
+            </div>
+            <div className="row">
+            <div className="col-md-6 col-sm-12">
                 <div className="tech_skills">
                 <h4 className="title_text">Desgining Skills</h4>
                 {design_skill.map((m,j)=> <MyProgress now = {m.now} title = {m.title} key={j} />)}
                 </div>
                 <div className="tech_skills">
                 <h4 className="title_text">Database Skills</h4>
-                {database_skill.map((m,j)=> <MyProgress now = {m.now} key={j} />)}
+                {database_skill.map((m,j)=> <MyProgress now = {m.now} key={j} title = {m.title} />)}
                 </div>
               </div>
-             
-              {/* {database_skill.map((m,j)=> <MyProgress now = {m.now} key={j} />)} */}
+              <div className="col-md-6 col-sm-12">
+                <div className="tech_skills">
+                <h4 className="title_text">Desgining Skills</h4>
+                {tech_skills.map((m,j)=> <MyProgress now = {m.now} title = {m.title} key={j} />)}
+                </div>
+                
+              </div>
             </div>
           </div>
         </div>

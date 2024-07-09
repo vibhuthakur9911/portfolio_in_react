@@ -1,14 +1,14 @@
 import React from "react";
 import { IconUserCircle } from "@tabler/icons-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Outlet, NavLink } from "react-router-dom";
-import propTypes from "prop-types"
+import {NavLink } from "react-router-dom";
+// import propTypes from "prop-types"
 import {
   faUserSecret,
   faIdCard,
-  faLaptopCode,
+  // faLaptopCode,
+  // faXTwitter,
   faAddressBook,
-  faXTwitter,
 } from "@fortawesome/free-solid-svg-icons";
 
 const menu = [

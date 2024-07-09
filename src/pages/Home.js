@@ -33,9 +33,10 @@ const Home = () => {
       style={{  display: 'inline-block', color: 'rgb(36 210 132)'}}
       repeat={Infinity}
     /> </h2>
-              <p>In this dynamic field, staying ahead of the curve is crucial. I remain at the forefront of the latest web development trends, ensuring that the solutions I provide are not only current but also forward-thinking. Committed to excellence, I consistently deliver high-quality solutions that not only meet but exceed business objectives.</p>
+              <h5>Crafting Extraordinary Online Experience</h5>
+              <p>Discover high-quality solutions that not only meet but exceed your business objectives. Witness the transformation of your ideas into something truly remarkable!</p>
 
-              <button className="btn btn-primary">Download CV <FontAwesomeIcon icon={faDownload} /></button>
+              <a href="javascript:void(0);" className=" default-btn"><span>Download CV <FontAwesomeIcon icon={faDownload} /></span></a>
              </div>
             </div>
         </div>

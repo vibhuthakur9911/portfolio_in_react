@@ -67,35 +67,15 @@ const About = (props) => {
                 <div className="about_content">
                   {/* <img src={banner_img} alt="banner_img" className="img-fluid" /> */}
                   <p>
-                    As a seasoned web developer, I excel in the art of crafting
-                    extraordinary online experiences. My expertise lies in
-                    front-end development, where I leverage HTML, CSS, and
-                    JavaScript to breathe life into designs. Meticulous in my
-                    approach, I possess a keen eye for detail and a profound
-                    understanding of user-centered design principles. My goal is
-                    to fashion websites that are not only visually stunning but
-                    also intuitively navigable, captivating users from the first
-                    click.
+                  As a seasoned web developer, I specialize in crafting extraordinary online experiences. My expertise lies in front-end development, where I leverage HTML, CSS, and JavaScript to transform designs into interactive realities. With meticulous attention to detail and a deep understanding of user-centered design principles, I create websites that are not only visually stunning but also intuitively navigable, captivating users from the first click.
                   </p>
                   <p>
-                    Proficient in the intricacies of responsive design, I pride
-                    myself on delivering seamless and engaging interfaces across
-                    all devices. A collaborative spirit, I am skilled in working
-                    with cross-functional teams, translating diverse
-                    requirements into scalable and efficient code.
+                  I excel in responsive design, delivering seamless and engaging interfaces across all devices. My collaborative spirit allows me to work effectively with cross-functional teams, translating diverse requirements into scalable and efficient code.
                   </p>
                   <p>
-                    In this dynamic field, staying ahead of the curve is
-                    crucial. I remain at the forefront of the latest web
-                    development trends, ensuring that the solutions I provide
-                    are not only current but also forward-thinking. Committed to
-                    excellence, I consistently deliver high-quality solutions
-                    that not only meet but exceed business objectives.
+                  In the ever-evolving field of web development, staying ahead of the curve is crucial. I keep abreast of the latest trends and technologies, ensuring that the solutions I provide are both current and forward-thinking. Committed to excellence, I consistently deliver high-quality solutions that meet and exceed business objectives.
                   </p>
-                  <p>
-                    Let's embark on a journey of creating something truly
-                    amazing together.
-                  </p>
+                  <p>Let's embark on a journey to create something truly amazing together." </p>
                 </div>
               </div>
               <div className="col-md-4 col-sm-12 col-xs-12">
