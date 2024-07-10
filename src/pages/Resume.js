@@ -198,6 +198,40 @@ const Resume = (props) => {
                 
               </div>
             </div>
+              <div className="row">
+                <div className="col-md-12 col-sm-12">
+                  <div className="skillPoints">
+                        <h4 className="title_text">Technical Skills</h4>
+                          <ul className="Other_skills">
+                            <li><b>Version Control:</b> Git, GitHub</li>
+                            <li><b>Cross-Browser Compatibility:</b> Testing and ensuring compatibility across different browsers</li>
+                            <li><b>Web Performance Optimization:</b> Improving site speed and performance</li>
+                            <li><b>Debugging and Troubleshooting:</b> Identifying and resolving front-end issues  </li>
+                          </ul>
+                  </div>
+                  <div className="skillPoints">
+                        <h4 className="title_text">Soft Skills</h4>
+                          <ul className="Other_skills">
+                            <li><b>Attention to Detail:</b> Meticulous approach to web development</li>
+                            <li><b>Collaboration:</b> Working effectively with cross-functional teams</li>
+                            <li><b>Communication:</b> Translating technical concepts to non-technical stakeholders</li>
+                            <li><b>Problem-Solving:</b> Developing creative solutions to complex problems</li>
+                            <li><b>Adaptability:</b> Staying current with the latest web development trends and technologies</li>
+                            <li><b>Time Management:</b> Delivering projects on time and within scope  </li>
+                            <li><b>User Experience (UX) Focus:</b> Ensuring user satisfaction and engagement </li>
+                          </ul>
+                  </div>
+                  <div className="skillPoints">
+                     <h4 className="title_text">Additional Skills</h4>
+                      <ul className="Other_skills">
+                        <li><b>SEO Best Practices:</b> Implementing strategies to improve search engine rankings</li>
+                        <li><b>Accessibility:</b> Creating inclusive and accessible web experiences</li>
+                        <li><b>API Integration:</b> Connecting front-end with back-end services and APIs </li>
+                        <li><b>Project Management Tools:</b> Familiarity with tools Asana  and others</li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
       </div>

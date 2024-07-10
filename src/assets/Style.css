@@ -551,3 +551,27 @@ img {
 .tech_skills {
   margin: 41px 0;
 }
+
+ul.Other_skills {
+  position: relative;
+  padding: 0 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+ul.Other_skills li {
+  position: relative;
+}
+
+ul.Other_skills li:before {
+  position: absolute;
+  content: "\f14a";
+  font-family: "Font Awesome 6 Free";
+  left: -30px;
+  color: var(--theme-color);
+  display: flex;
+  font-size: 20px;
+}
+.skillPoints {
+  padding: 0px 0 30px 0;
+}
