@@ -46,7 +46,10 @@ a {
   text-decoration: none;
   transition: all 0.3s;
 }
-
+button {
+  border: none;
+  background: #0000;
+}
 p {
   font-family: "Poppins", sans-serif;
   color: var(--text-color);
@@ -242,6 +245,7 @@ img {
   height: 100vh;
   max-width: calc(100vw - 260px);
   margin-left: 260px;
+  overflow-x: hidden;
 }
 .home_banner {
   height: 100vh;
@@ -405,15 +409,18 @@ img {
   }
 }
 
-.resume_head {
+.resume_head,
+.page_heading {
   position: relative;
   display: inline-block;
 }
 
-.resume_head span {
+.resume_head span,
+.page_heading span {
   position: absolute;
   bottom: -23px;
   right: -42px;
+  z-index: 9;
 }
 .myProgress.progress .progress-bar {
   background-color: #007d45;
@@ -574,4 +581,69 @@ ul.Other_skills li:before {
 }
 .skillPoints {
   padding: 0px 0 30px 0;
+}
+
+/* ==================Contact Form ================= */
+
+.form-block input,
+.form-block textarea {
+  width: 100%;
+  margin: 0 0 20px 0;
+  background: #0000;
+  outline: none;
+  border: 0;
+  padding: 8px;
+  border-bottom: 3px solid var(--theme-color);
+  color: var(--text-color);
+  transition: 0.5s;
+}
+
+.form-block textarea {
+  min-height: 50px;
+  max-height: 150px;
+  height: 100px;
+}
+.form-block {
+  padding: 42px 25px 22px 25px;
+  background-color: #000000a3;
+  /* box-shadow: 0px 0px 20px 0px #0000003b; */
+  /* border-radius: 20px; */
+  position: relative;
+  height: 100%;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+}
+
+.form-input {
+  text-align: center;
+  margin: 18px 0 0 0;
+}
+.contact {
+  padding: 51px 0;
+  position: relative;
+  /* overflow-x: hidden; */
+}
+
+.overLay-circle {
+  position: absolute;
+  content: "";
+  height: 500px;
+  width: 500px;
+  border-radius: 20px;
+  top: 0;
+}
+.overLay-circle_2 {
+  right: 0;
+  background: #00ff8d87;
+  transform: rotate(45deg);
+}
+
+.overLay-circle_1 {
+  left: 0;
+  background: #55e6a561;
+  transform: rotate(45deg);
+}
+.contact_sec {
+  width: 100%;
+  padding: 70px 24px 35px 24px;
 }
