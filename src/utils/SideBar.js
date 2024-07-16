@@ -1,7 +1,7 @@
-import React from "react";
+import React,  { useState } from "react";
 import { IconUserCircle } from "@tabler/icons-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 // import propTypes from "prop-types"
 import {
   faUserSecret,
@@ -12,52 +12,64 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const menu = [
-{
-  title:'Home',
-  icon:  <IconUserCircle stroke={2} />,
-  url: '/'
-},
-{
-  title:'About me',
-  icon:   <FontAwesomeIcon icon={faUserSecret} />,
-  url: '/about'
-},
-{
-  title:'Resume',
-  icon:   <FontAwesomeIcon icon={faIdCard} />,
-  url: '/resume'
-},
-// {
-//   title:'Portfolio',
-//   icon:   <FontAwesomeIcon icon={faIdCard} />,
-//   url: '/'
-// },
-{
-  title:'Contact us',
-  icon:   <FontAwesomeIcon icon={faAddressBook} />,
-  url: '/contact'
-},
+  {
+    title: "Home",
+    icon: <IconUserCircle stroke={2} />,
+    url: "/",
+  },
+  {
+    title: "About me",
+    icon: <FontAwesomeIcon icon={faUserSecret} />,
+    url: "/about",
+  },
+  {
+    title: "Resume",
+    icon: <FontAwesomeIcon icon={faIdCard} />,
+    url: "/resume",
+  },
+  // {
+  //   title:'Portfolio',
+  //   icon:   <FontAwesomeIcon icon={faIdCard} />,
+  //   url: '/'
+  // },
+  {
+    title: "Contact us",
+    icon: <FontAwesomeIcon icon={faAddressBook} />,
+    url: "/contact",
+  },
+];
 
-]
-
-function Menu(props){
+function Menu({ title, url, icon, toggleSidebar }) {
   return (
-    <>
-      <li key={props.i}>
-      <NavLink to={props.url} activeClassName="active">
-      <span className="sideIcon">
-      {props.icon}
-      </span>
-      {props.title}
+    <li>
+      <NavLink to={url} activeClassName="active" onClick={toggleSidebar}>
+        <span className="sideIcon">{icon}</span>
+        {title}
       </NavLink>
-      </li>
-    </>
-  )
+    </li>
+  );
 }
 export default function SideBar(props) {
+  const [isActive, setIsActive] = useState(true);
+
+  const toggleSidebar = () => {
+    setIsActive(!isActive);
+  };
   return (
     <>
-      <div className="sideBar">
+      <div className="header">
+        <div className="header_inner">
+          <div className="logo"></div>
+          <div   className={`toggle_btn ${isActive ? 'active' : ''}`} 
+            onClick={toggleSidebar}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <div className={`sidebar_overlay ${isActive? `active`: ''}`}></div>
+      <div className={`sideBar ${isActive ? 'active' : ''}`}  >
         <div className="sideBar_inner_content">
           <div className="sidebar_upperContent">
             <div className="logo">
@@ -65,7 +77,9 @@ export default function SideBar(props) {
             </div>
             <div className="sideMenu">
               <ul>
-              {menu.map((m,i)=><Menu title = {m.title} key={i} url = {m.url} icon = {m.icon}/>)}
+                {menu.map((m, i) => (
+                  <Menu title={m.title} key={i} url={m.url} icon={m.icon}  toggleSidebar={toggleSidebar} />
+                ))}
               </ul>
               {/* <ul>
                 <li>
@@ -113,22 +127,63 @@ export default function SideBar(props) {
             </div>
           </div>
           <div className="sidebar_lowerContent">
-          <div class="socialIcon">
-                <ul>
-                    <li> <a href="https://github.com/vibhuthakur9911" target="_blank" aria-label="Go to github" rel="noopener noreferrer"> <i class="fab fa-github"></i></a>
-                    </li>
-                    <li> <a href="https://www.linkedin.com/in/vaibhav-thakur9911/" target="_blank" aria-label="Visit to Linkedin" rel="noopener noreferrer"> <i class="fab fa-linkedin"></i></a></li>
+            <div class="socialIcon">
+              <ul>
+                <li>
+                  {" "}
+                  <a
+                    href="https://github.com/vibhuthakur9911"
+                    target="_blank"
+                    aria-label="Go to github"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li>
+                  {" "}
+                  <a
+                    href="https://www.linkedin.com/in/vaibhav-thakur9911/"
+                    target="_blank"
+                    aria-label="Visit to Linkedin"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
 
-                    <li> <a href="https://www.instagram.com/mr.rajput12o8/" target="_blank" aria-label="Visit to Instagram" rel="noopener noreferrer"> <i class="fab fa-instagram"></i></a></li>
+                <li>
+                  {" "}
+                  <a
+                    href="https://www.instagram.com/mr.rajput12o8/"
+                    target="_blank"
+                    aria-label="Visit to Instagram"
+                    rel="noopener noreferrer"
+                  >
+                    {" "}
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
 
-                    <li> <a href="https://twitter.com/vibhuvibes" target="_blank" aria-label="Visit to X " rel="noopener noreferrer"> 
-                    <i class="fa-brands fa-x-twitter"></i></a></li>
-                    {/* <li> <a href="https://twitter.com/vibhuvibes" aria-label="say hi on fa-whatsapp" target="_blank">
+                <li>
+                  {" "}
+                  <a
+                    href="https://twitter.com/vibhuvibes"
+                    target="_blank"
+                    aria-label="Visit to X "
+                    rel="noopener noreferrer"
+                  >
+                    <i class="fa-brands fa-x-twitter"></i>
+                  </a>
+                </li>
+                {/* <li> <a href="https://twitter.com/vibhuvibes" aria-label="say hi on fa-whatsapp" target="_blank">
                     <img src="assets/img/x-twitter.svg" alt=""/></a></li> */}
 
-                  {/* <li> <a href="https://wa.me/919911069091?text=Hii" aria-label="say hi on fa-whatsapp" target="_blank"> <i class="fa fa-whatsapp"></i></a></li>  */}
-                </ul>
-            </div> 
+                {/* <li> <a href="https://wa.me/919911069091?text=Hii" aria-label="say hi on fa-whatsapp" target="_blank"> <i class="fa fa-whatsapp"></i></a></li>  */}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

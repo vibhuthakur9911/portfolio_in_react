@@ -3,30 +3,37 @@ const Contact = (props) => {
     <>
       <div className="main_content">
         <div className="contact_sec">
+          <div className="container">
           <div className="page_heading">
             <h5 className="stroke_text">Contact us</h5>
             <span className="tag_block">
               We will happy to connect with you! 💼
             </span>
           </div>
+          </div>
           <div className="contact">
-            <div className="contianer">
+            <div className="container">
               <div className="overLay-circle overLay-circle_1"></div>
               <div className="overLay-circle overLay-circle_2"></div>
               <div className="row justify-content-center">
-                <div className="col-md-6">
+                <div className="col-xl-6 col-lg-7 col-md-10 col-sm-12">
                   <div class="form-block">
+                    <div className="form-heading">
+                      <h3 className=" text-white">Get in touch with us!</h3>
+                      <p></p>
+                    </div>
                     <form
                       id="contact-form"
                       method="POST"
                       // action="https://api.web3forms.com/submit"
+                      action=""
                     >
                       <div id="key-access">
-                        <input
+                        {/* <input
                           type="hidden"
                           name="access_key"
                           value="bcb69b45-7647-403f-a791-14f0261bb02f"
-                        />
+                        /> */}
                       </div>
 
                       <div class="row">

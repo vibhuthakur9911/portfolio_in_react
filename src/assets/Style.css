@@ -122,6 +122,8 @@ img {
   display: inline-block;
   letter-spacing: 7px;
   line-height: 1;
+  position: relative;
+  z-index: 2;
 }
 
 .title_text {
@@ -137,6 +139,75 @@ img {
   border-radius: 2px;
   display: inline-block;
 }
+.header {
+  display: none;
+  position: fixed;
+  width: 100%;
+}
+.header_inner {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  padding: 10px 7px;
+  background: var(--dark-theme-sidebaar);
+  box-shadow: 0px 3px 11px 6px #00000070;
+}
+
+.toggle_btn {
+  position: relative;
+  width: 52px;
+  height: 54px;
+  background: #0000;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* border: 1px solid var(--theme-color); */
+  overflow: hidden;
+}
+
+.toggle_btn.active span {
+  background: var(--theme-color);
+}
+.toggle_btn span {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.toggle_btn span:nth-child(1) {
+  transform: translateY(-15px);
+  width: 25px;
+  left: 7px;
+}
+
+.toggle_btn.active span:nth-child(1) {
+  width: 40px;
+  transform: translateY(0) rotate(45deg);
+  transition-delay: 0.125s;
+}
+
+.toggle_btn span:nth-child(2) {
+  transform: translateY(15px);
+  width: 15px;
+  left: 7px;
+}
+
+.toggle_btn.active span:nth-child(2) {
+  width: 40px;
+  transform: translateY(0) rotate(315deg);
+  transition-delay: 0.25s;
+}
+
+.toggle_btn.active span:nth-child(3) {
+  transform: translateX(60px);
+}
+
 /* =============Side bar================= */
 .sideBar {
   position: fixed;
@@ -145,8 +216,21 @@ img {
   height: 100%;
   background: var(--dark-theme-sidebaar);
   overflow: auto;
+  z-index: 9;
 }
 
+.sidebar_overlay {
+  /* display: none; */
+  position: fixed;
+  height: 100%;
+  width: 0;
+  background: #00000066;
+  transition: 0.7s;
+  top: 0;
+  z-index: 3;
+  transition-delay: 0.3s;
+  backdrop-filter: blur(1.5px);
+}
 .logo h2 {
   color: var(--theme-color);
   text-align: center;
@@ -242,7 +326,6 @@ img {
 }
 
 .main_content {
-  height: 100vh;
   max-width: calc(100vw - 260px);
   margin-left: 260px;
   overflow-x: hidden;
@@ -418,9 +501,9 @@ img {
 .resume_head span,
 .page_heading span {
   position: absolute;
-  bottom: -23px;
-  right: -42px;
-  z-index: 9;
+  bottom: -25px;
+  right: 0;
+  z-index: 2;
 }
 .myProgress.progress .progress-bar {
   background-color: #007d45;

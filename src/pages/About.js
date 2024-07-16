@@ -38,7 +38,7 @@ const specialize = [
 function Specialized(props) {
   return (
     <>
-      <div className="col-md-3 col-sm-6 col-xs-12" key={props.j}>
+      <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12" key={props.j}>
         <div className="specialize_block">
           <div className="specialize_block_inner">
             <img src={props.src} />
@@ -57,14 +57,13 @@ const About = (props) => {
         <div className="about_sec">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-12">
+
+              <div className="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                <div className="about_content">
                 <span className="stroke_text">About me </span>
                 <h4 className="title_text">
                   Crafting stories through design and innovation
                 </h4>
-              </div>
-              <div className="col-md-8 col-sm-12 col-xs-12">
-                <div className="about_content">
                   {/* <img src={banner_img} alt="banner_img" className="img-fluid" /> */}
                   <p>
                   As a seasoned web developer, I specialize in crafting extraordinary online experiences. My expertise lies in front-end development, where I leverage HTML, CSS, and JavaScript to transform designs into interactive realities. With meticulous attention to detail and a deep understanding of user-centered design principles, I create websites that are not only visually stunning but also intuitively navigable, captivating users from the first click.
@@ -78,14 +77,14 @@ const About = (props) => {
                   <p>Let's embark on a journey to create something truly amazing together." </p>
                 </div>
               </div>
-              <div className="col-md-4 col-sm-12 col-xs-12">
+              <div className="col-lg-5 col-md-12 col-sm-12 col-xs-12">
                 <div className="about_img ">
                 <Tilt className="tilt-effect" tiltReverse={true}   trackOnWindow={true}> <div className="bord" > </div>   </Tilt>
                   <img src={abt_img} alt="banner_img" className="img-fluid" />
                 </div>
               </div>
 
-              <div className="col-md-12 col-sm-12 col-xs-12">
+              <div className=" col-md-12 col-sm-12 col-xs-12">
                 <div class="skill-sec">
                   <div class="block-title">
                     <h4 className="title_text">

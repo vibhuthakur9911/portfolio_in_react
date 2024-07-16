@@ -9,11 +9,11 @@ import InfoPopup from "./utils/components/Popup"
 // React Routing
 import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SideBar from "./utils/SideBar";
 import React from "react";
 import AnimatedCursor from "react-animated-cursor"
 import "./App.css";
 import "./assets/Style.css";
+import "./assets/Responsive.css";
 
 
 function App() {
