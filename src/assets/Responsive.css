@@ -115,7 +115,7 @@
 }
 
 @media only screen and (max-width: 580px) {
-  .main_content {
+  .mainContent {
     margin-left: 0;
     width: 100%;
     max-width: 100%;
@@ -196,5 +196,13 @@
     height: 120px;
     width: 120px;
     background: #55e6a569;
+  }
+  .footer_content {
+    flex-wrap: wrap;
+  }
+
+  .footer_content p,
+  .footer_content a {
+    font-size: 14px;
   }
 }

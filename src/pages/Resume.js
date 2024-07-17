@@ -2,6 +2,7 @@
 import ProgressBar from "react-bootstrap/ProgressBar";
 import ds_logo from "../assets/dreams-logo.svg";
 import css_logo from "../assets/css-logo.png";
+import bg_body from '../assets/body-bg.png'
 
 const design_skill = [
   {
@@ -86,12 +87,12 @@ function MyProgress(props) {
 const Resume = (props) => {
   return (
     <>
-      <div className="main_content">
+      <div className="main_content" style={{backgroundImage:`url(${bg_body})`}}>
         <div className="about_sec">
           <div className="container">
             <div className="resume_head">
               <h5 className="stroke_text">Resume</h5>
-              <span className="tag_block">2+ Years of Experienced</span>
+              <span className="tag_block">2+ Years of Experience 🏆</span>
             </div>
             <div className="row align-items-center">
               <div className="col-md-12">
@@ -100,9 +101,9 @@ const Resume = (props) => {
                   <div className="exp_content">
                     <div className="exp_content_block">
                       <h6 className="tag_block">July 2023 - Present</h6>
-                      <h5 className="exp-title">MERN Stack Web Developer</h5>
-                      <span class="event-description">
-                        <span class="dreams-logo">
+                      <h5 className="exp-title">React Developer</h5>
+                      <span className="event-description">
+                        <span className="dreams-logo">
                           <img src={ds_logo} alt="" />
                         </span>
                         Dream Steps Technologies
@@ -124,8 +125,8 @@ const Resume = (props) => {
                     <div className="exp_content_block">
                       <h6 className="tag_block">February 2022 - July 2023</h6>
                       <h5 className="exp-title">Web Developer</h5>
-                      <span class="event-description">
-                        <span class="dreams-logo">
+                      <span className="event-description">
+                        <span className="dreams-logo">
                           <img src={css_logo} alt="" />
                         </span>
                         Css Founder Pvt Ltd
@@ -144,8 +145,8 @@ const Resume = (props) => {
                     <div className="exp_content_block">
                       <h6 className="tag_block">February 2022 - July 2023</h6>
                       <h5 className="exp-title">Trainer</h5>
-                      <span class="event-description">
-                        <span class="dreams-logo">
+                      <span className="event-description">
+                        <span className="dreams-logo">
                           <img src={css_logo} alt="" />
                         </span>
                         Css Founder Pvt Ltd
@@ -163,8 +164,8 @@ const Resume = (props) => {
                     <div className="exp_content_block">
                       <h6 className="tag_block">Aug 2021 - February 2022</h6>
                       <h5 className="exp-title">Web Designer</h5>
-                      <span class="event-description">
-                        <span class="dreams-logo">
+                      <span className="event-description">
+                        <span className="dreams-logo">
                           <img src={css_logo} alt="" />
                         </span>
                         Css Founder Pvt Ltd

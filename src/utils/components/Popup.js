@@ -43,6 +43,7 @@ useEffect(() => {
         <Modal.Body>
         <p>Thank you for visiting my website. Please note that it is currently under development, and some features may not be available. I appreciate your patience and look forward to bringing you an improved experience soon!</p>
           <p><strong>Disclaimer:</strong> This is a portfolio site to showcase my work. I am not selling any services through this site.</p>
+          <p><strong>Note:</strong> For more information you can visit main site <a href='https://vaibhav-thakur.netlify.app/'>here</a></p>
         </Modal.Body>
         <Modal.Footer>
           <a href="javascript:void(0);" className="default-btn" onClick={handleClose}>

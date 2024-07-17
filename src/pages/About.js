@@ -38,7 +38,7 @@ const specialize = [
 function Specialized(props) {
   return (
     <>
-      <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12" key={props.j}>
+     <div className="col-lg-3 col-md-6 col-sm-12 col-xs-12" key={props.j}>
         <div className="specialize_block">
           <div className="specialize_block_inner">
             <img src={props.src} />
@@ -46,7 +46,7 @@ function Specialized(props) {
             <p>{props.desc}</p>
           </div>
         </div>
-      </div>
+      </div> 
     </>
   );
 }
@@ -85,8 +85,8 @@ const About = (props) => {
               </div>
 
               <div className=" col-md-12 col-sm-12 col-xs-12">
-                <div class="skill-sec">
-                  <div class="block-title">
+                <div className="skill-sec">
+                  <div className="block-title">
                     <h4 className="title_text">
                       Here's what I bring to the table:
                     </h4>

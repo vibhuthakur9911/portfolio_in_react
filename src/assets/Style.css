@@ -45,6 +45,7 @@ ol {
 a {
   text-decoration: none;
   transition: all 0.3s;
+  color: var(--theme-color);
 }
 button {
   border: none;
@@ -54,6 +55,7 @@ p {
   font-family: "Poppins", sans-serif;
   color: var(--text-color);
   font-size: 16px;
+  font-weight: 400;
 }
 img {
   max-width: 100%;
@@ -83,7 +85,7 @@ img {
 }
 
 .myModal .modal-body {
-  padding: 30px 18px;
+  padding: 18px 18px 0;
 }
 
 .default-btn span {
@@ -155,8 +157,8 @@ img {
 
 .toggle_btn {
   position: relative;
-  width: 52px;
-  height: 54px;
+  width: 45px;
+  height: 45px;
   background: #0000;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
@@ -168,40 +170,41 @@ img {
   overflow: hidden;
 }
 
-.toggle_btn.active span {
-  background: var(--theme-color);
-}
 .toggle_btn span {
   position: absolute;
-  width: 40px;
-  height: 4px;
+  width: 34px;
+  height: 3px;
   background: #fff;
   border-radius: 10px;
   transition: 0.5s;
+  left: 0;
 }
 
-.toggle_btn span:nth-child(1) {
-  transform: translateY(-15px);
-  width: 25px;
-  left: 7px;
+.toggle_btn.active span {
+  background: var(--theme-color);
 }
 
+.toggle_btn.active span:nth-child(2) {
+  width: 33px;
+  transform: translateY(0) rotate(315deg);
+  transition-delay: 0.25s;
+}
 .toggle_btn.active span:nth-child(1) {
-  width: 40px;
+  width: 33px;
   transform: translateY(0) rotate(45deg);
   transition-delay: 0.125s;
 }
 
 .toggle_btn span:nth-child(2) {
-  transform: translateY(15px);
+  transform: translateY(12px);
   width: 15px;
-  left: 7px;
+  left: 0px;
 }
 
-.toggle_btn.active span:nth-child(2) {
-  width: 40px;
-  transform: translateY(0) rotate(315deg);
-  transition-delay: 0.25s;
+.toggle_btn span:nth-child(1) {
+  transform: translateY(-12px);
+  width: 25px;
+  left: 0px;
 }
 
 .toggle_btn.active span:nth-child(3) {
@@ -325,7 +328,15 @@ img {
   border-color: var(--theme-color);
 }
 
+/* .main_content {
+  max-width: calc(100vw - 260px);
+  margin-left: 260px;
+  overflow-x: hidden;
+} */
 .main_content {
+  background-size: cover;
+}
+.mainContent {
   max-width: calc(100vw - 260px);
   margin-left: 260px;
   overflow-x: hidden;
@@ -367,10 +378,10 @@ img {
 
 .about_content {
   padding-right: 25px;
-  text-align: justify;
 }
 .about_content p {
   margin-bottom: 8px;
+  text-align: justify;
 }
 
 .specialize_block {
@@ -662,7 +673,7 @@ ul.Other_skills li:before {
   display: flex;
   font-size: 20px;
 }
-.skillPoints {
+.skillPoints:not(:last-child) {
   padding: 0px 0 30px 0;
 }
 
@@ -688,13 +699,14 @@ ul.Other_skills li:before {
 }
 .form-block {
   padding: 42px 25px 22px 25px;
-  background-color: #000000a3;
+  background-color: #00000059;
   /* box-shadow: 0px 0px 20px 0px #0000003b; */
   /* border-radius: 20px; */
   position: relative;
   height: 100%;
-  backdrop-filter: blur(30px);
-  border-radius: 10px;
+  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(2px);
+  border-radius: 14px;
 }
 
 .form-input {
@@ -729,4 +741,27 @@ ul.Other_skills li:before {
 .contact_sec {
   width: 100%;
   padding: 70px 24px 35px 24px;
+}
+.footer_content {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.footer_content p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.footer {
+  background: #101010;
+  padding: 17px 17px;
+  box-shadow: 0px 2px 12px 0px #00000082;
+  font-size: 13px;
+}
+
+.footer_right a {
+  color: var(--text-color);
+  font-weight: normal;
 }

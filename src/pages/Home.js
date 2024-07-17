@@ -14,7 +14,7 @@ const Home = () => {
         <div className="home_banner" style={{ backgroundImage: `url(${banner_img})` }}>
             <div className="home_banner_left" >
              <div className="banner-content">
-             {/* <h1></h1> */}
+             {/*<h1> </h1> */}
              <h2>HI, I'AM VAIBHAV THAKUR,A <br/> 
               <TypeAnimation
       sequence={[

@@ -1,23 +1,41 @@
+import bg_body from "../assets/body-bg.png";
+import contact_us from "../assets/contact-page.png";
 const Contact = (props) => {
   return (
     <>
-      <div className="main_content">
+      <div
+        className="main_content"
+        style={{ backgroundImage: `url(${bg_body})` }}
+      >
         <div className="contact_sec">
           <div className="container">
-          <div className="page_heading">
-            <h5 className="stroke_text">Contact us</h5>
-            <span className="tag_block">
-              We will happy to connect with you! 💼
-            </span>
-          </div>
+            <div className="page_heading">
+              <h5 className="stroke_text">Contact us</h5>
+              <span className="tag_block">
+                We will happy to connect with you! 💼
+              </span>
+            </div>
           </div>
           <div className="contact">
             <div className="container">
-              <div className="overLay-circle overLay-circle_1"></div>
-              <div className="overLay-circle overLay-circle_2"></div>
-              <div className="row justify-content-center">
-                <div className="col-xl-6 col-lg-7 col-md-10 col-sm-12">
-                  <div class="form-block">
+              <div className="row">
+                <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                  <div className="contact_info">
+                    
+                  </div>
+                </div>
+              </div>
+
+              {/* <div className="overLay-circle overLay-circle_1"></div>
+              <div className="overLay-circle overLay-circle_2"></div> */}
+              <div className="row justify-content-center align-items-center">
+                
+                <div className="col-xl-6 col-lg-5 col-md-6 col-sm-12">
+                  <img src={contact_us} alt="Contact us"/>
+                </div>
+
+                <div className="col-xl-6 col-lg-7 col-md-6 col-sm-12">
+                  <div className="form-block">
                     <div className="form-heading">
                       <h3 className=" text-white">Get in touch with us!</h3>
                       <p></p>
@@ -36,20 +54,20 @@ const Contact = (props) => {
                         /> */}
                       </div>
 
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="form-input">
+                      <div className="row">
+                        <div className="col-md-12">
+                          <div className="form-input">
                             <input
                               type="text"
                               placeholder="Name*"
                               id="name"
-                              name=""
+                              name="name"
                               required=""
                             />
                           </div>
                         </div>
-                        <div class="col-md-12">
-                          <div class="form-input">
+                        <div className="col-md-12">
+                          <div className="form-input">
                             <input
                               type="email"
                               placeholder="email*"
@@ -59,8 +77,8 @@ const Contact = (props) => {
                             />
                           </div>
                         </div>
-                        <div class="col-md-12">
-                          <div class="form-input">
+                        <div className="col-md-12">
+                          <div className="form-input">
                             <input
                               type="text"
                               placeholder="Phone"
@@ -73,8 +91,8 @@ const Contact = (props) => {
                             />
                           </div>
                         </div>
-                        <div class="col-md-12">
-                          <div class="form-input">
+                        <div className="col-md-12">
+                          <div className="form-input">
                             <textarea
                               name="message"
                               id="message"
@@ -83,10 +101,10 @@ const Contact = (props) => {
                           </div>
                         </div>
 
-                        <div class="col-md-12">
-                          <div class="form-input">
-                            <button type="submit" class="default-btn">
-                             <span> Send Message</span>
+                        <div className="col-md-12">
+                          <div className="form-input">
+                            <button type="submit" className="default-btn">
+                              <span> Send Message</span>
                             </button>
                           </div>
                         </div>

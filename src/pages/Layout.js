@@ -1,5 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import SideBar from "../utils/SideBar";
+import Footer from '../utils/Footer'
 // import MainContent from "../utils/MainContent";
 
 const Layout = () => {
@@ -7,7 +8,10 @@ const Layout = () => {
     <>
       <SideBar />
       {/* <MainContent /> */}
-      <Outlet />
+      <div className="mainContent">
+        <Outlet />
+        <Footer />
+      </div>
     </>
   );
 };

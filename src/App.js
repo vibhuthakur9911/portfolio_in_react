@@ -1,4 +1,5 @@
 import ReactDOM from "react-dom/client";
+import React, { useState }  from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -9,7 +10,6 @@ import InfoPopup from "./utils/components/Popup"
 // React Routing
 import logo from "./logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import React from "react";
 import AnimatedCursor from "react-animated-cursor"
 import "./App.css";
 import "./assets/Style.css";
